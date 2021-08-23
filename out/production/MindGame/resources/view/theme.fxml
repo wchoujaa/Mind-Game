@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="473.0" prefWidth="543.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.ThemeController">
+   <children>
+      <VBox layoutX="222.0" layoutY="125.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="166.0" prefWidth="543.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="91.0" prefWidth="282.0" text="Theme Loader">
+                           <font>
+                              <Font name="System Bold" size="34.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="44.0" prefWidth="543.0">
+                           <children>
+                              <TextArea fx:id="themeText" prefHeight="37.0" prefWidth="212.0" promptText="Enter a theme" HBox.hgrow="NEVER">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </TextArea>
+                              <Button mnemonicParsing="false" onAction="#onLoadButtonClicked" prefHeight="35.0" prefWidth="52.0" text="Load" HBox.hgrow="ALWAYS" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <ScrollPane hbarPolicy="ALWAYS" prefHeight="100.0" vbarPolicy="NEVER" VBox.vgrow="NEVER">
+              <content>
+                <AnchorPane maxWidth="-Infinity" minHeight="0.0" nodeOrientation="LEFT_TO_RIGHT">
+                     <children>
+                        <HBox fx:id="imageContainer" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="99.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children></AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <AnchorPane prefHeight="57.0" prefWidth="543.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button style="-fx-background-color: #2196f3; -fx-background-radius: 11;"  layoutX="455.0" layoutY="16.0" mnemonicParsing="false" onAction="#onExitPressed" text="exit" AnchorPane.bottomAnchor="21.0" AnchorPane.rightAnchor="21.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

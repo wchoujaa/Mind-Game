@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="394.0" prefWidth="611.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.MenuController">
+   <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane prefHeight="71.0" prefWidth="700.0">
+         <Label alignment="CENTER" layoutX="182.0" layoutY="30.0" prefHeight="42.0" prefWidth="271.0" text="Mind Game" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <font>
+               <Font name="Constantia Bold" size="34.0" />
+            </font>
+         </Label>
+         <Button layoutX="548.0" layoutY="11.0" mnemonicParsing="false" onAction="#onHighScorePressed" prefHeight="35.0" prefWidth="49.0" style="-fx-background-color: #2196f3; -fx-background-radius: 11;" text="score" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="11.0" />
+         <Button fx:id="aboutButton" layoutX="490.0" layoutY="11.0" mnemonicParsing="false" onAction="#onAboutPressed" prefHeight="35.0" prefWidth="49.0" style="-fx-background-color: #2196f3; -fx-background-radius: 11;" text="about" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="11.0" />
+      </AnchorPane>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="351.0" prefWidth="700.0" VBox.vgrow="ALWAYS">
+         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <AnchorPane maxWidth="301.0" minWidth="300.0" prefHeight="276.0" prefWidth="301.0" VBox.vgrow="ALWAYS">
+               <Button fx:id="playButton" contentDisplay="CENTER" layoutX="53.0" layoutY="248.0" mnemonicParsing="false" onAction="#playClicked" prefHeight="82.0" prefWidth="195.0" style="-fx-background-color: #2196f3; -fx-background-radius: 11;" text="Play">
+                  <font>
+                     <Font name="System Bold" size="38.0" />
+                  </font>
+               </Button>
+               <ChoiceBox fx:id="sizeChoiceBox" layoutX="76.0" layoutY="39.0" prefWidth="150.0" />
+               <Label alignment="CENTER" layoutX="94.0" layoutY="72.0" prefHeight="17.0" prefWidth="114.0" text="Difficulty" />
+               <Label alignment="CENTER" layoutX="100.0" layoutY="16.0" prefHeight="17.0" prefWidth="101.0" text="Size" />
+               <ChoiceBox fx:id="difficultyChoiceBox" layoutX="76.0" layoutY="100.0" prefWidth="150.0" />
+               <Label alignment="CENTER" layoutX="94.0" layoutY="132.0" prefHeight="17.0" prefWidth="114.0" text="Opponent" />
+               <ChoiceBox fx:id="opponentChoiceBox" layoutX="76.0" layoutY="156.0" prefWidth="150.0" />
+               <Label alignment="CENTER" layoutX="100.0" layoutY="187.0" prefHeight="17.0" prefWidth="101.0" text="theme" />
+               <ChoiceBox fx:id="themeChoiceBox" layoutX="76.0" layoutY="208.0" prefHeight="25.0" prefWidth="101.0" />
+               <Button layoutX="189.0" layoutY="209.0" mnemonicParsing="false" onAction="#onLoadPressed" prefHeight="25.0" prefWidth="40.0" style="-fx-background-color: #2196f3; -fx-background-radius: 11;" text="load" />
+            </AnchorPane>
+         </VBox>
+      </AnchorPane>
+   </VBox>
+</AnchorPane>
